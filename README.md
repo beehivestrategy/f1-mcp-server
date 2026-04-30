@@ -91,3 +91,10 @@ Recommended deployment targets for this architecture:
 See docs:
 
 - `docs/DEPLOYMENT.md`
+
+## Docker images (GitHub Container Registry)
+
+This repo builds and publishes images to GHCR on every push to `main` and on version tags (`v*`):
+
+- `ghcr.io/beehivestrategy/f1-mcp-server:main`
+- `ghcr.io/beehivestrategy/f1-mcp-server:<tag>`
