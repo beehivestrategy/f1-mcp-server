@@ -86,3 +86,16 @@ Store secrets in GitHub:
 - `VPS_SSH_KEY`
 - `MCP_AUTH_TOKEN` (or store on the VPS only)
 
+## One-command install
+
+From the VPS:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/beehivestrategy/f1-mcp-server/main/scripts/install-vps.sh | bash
+```
+
+Update:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/beehivestrategy/f1-mcp-server/main/scripts/update-vps.sh | bash
+```
