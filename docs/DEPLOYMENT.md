@@ -94,8 +94,23 @@ From the VPS:
 curl -fsSL https://raw.githubusercontent.com/beehivestrategy/f1-mcp-server/main/scripts/install-vps.sh | bash
 ```
 
-Update:
+Update (pull latest image and restart):
 
 ```bash
 curl -fsSL https://raw.githubusercontent.com/beehivestrategy/f1-mcp-server/main/scripts/update-vps.sh | bash
+```
+
+Restart only:
+
+```bash
+curl -fsSL https://raw.githubusercontent.com/beehivestrategy/f1-mcp-server/main/scripts/restart-vps.sh | bash
+```
+
+Manual (if you prefer SSHing in):
+
+```bash
+cd /opt/f1-mcp-server
+docker compose up -d
+docker compose restart
+docker compose logs -f --tail 200
 ```
