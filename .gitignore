@@ -1,0 +1,14 @@
+node_modules
+dist
+.DS_Store
+.env
+.env.*
+
+data/*.json
+data/*.sqlite
+data/*.db
+
+python-worker/.venv
+python-worker/.fastf1-cache
+python-worker/fia-regulations
+

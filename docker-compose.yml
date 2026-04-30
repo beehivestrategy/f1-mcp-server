@@ -1,0 +1,16 @@
+services:
+  f1-mcp:
+    build: .
+    restart: unless-stopped
+    environment:
+      MCP_AUTH_TOKEN: ${MCP_AUTH_TOKEN}
+      PORT: 8787
+      MCP_PATH: /mcp
+      MCP_MEMORY_PATH: /data/memory.json
+      FASTF1_CACHE_DIR: /data/fastf1-cache
+      FIA_REGS_DIR: /data/fia-regulations
+    ports:
+      - "8787:8787"
+    volumes:
+      - ./data:/data
+
